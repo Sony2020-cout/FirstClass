@@ -1,0 +1,38 @@
+
+#include <iostream>
+#include <string>
+
+using std::string;
+using std::cout;
+using std::endl;
+
+
+
+
+class Human{
+  public:
+    string name;
+    int age;
+    
+    Human(string name, int age){
+        this -> name = name;
+        this -> age = age;
+    }
+   
+    
+    void printHuman(){
+        cout << "Hello, my name is " << name << endl;
+        cout << "I am " << age  << " years old "<< endl;
+        
+    }
+    
+};
+
+int main()
+{
+    Human bob = Human("Bob", 15);
+    bob.printHuman();
+
+    return 0;
+    
+}
